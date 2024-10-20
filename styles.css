@@ -1,0 +1,222 @@
+/* General - Ajustes para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar-dark {
+    background-color: #6c757d; 
+    width: 100%; 
+    display: block;
+    padding: 15px;
+    text-align: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+.nav-item ps-5{
+    font-size: large;
+}
+
+/* Contenedor principal para opciones y texto */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+/* Opciones */
+.options-container {
+    flex: 0 0 20%; 
+    max-width: 20%;
+    margin-right: 20px;
+    align-self: flex-start;
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .options-container {
+        flex: 0 0 100%; 
+        max-width: 100%;
+        margin-right: 0;
+    }
+}
+
+.list-group {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    font-size: 1.25rem;
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+/* Contenedor de texto principal */
+
+.text-container {
+    flex: 0 0 70%; 
+    max-width: 70%;
+    margin-left: 10px;
+    margin-top: 50px;
+    text-align: justify;
+}
+
+@media (max-width: 992px) {
+    .text-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Columnas de texto */
+.text-column {
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+@media (max-width: 992px) {
+    .text-column {
+        padding: 10px;
+    }
+}
+
+/* Título principal */
+#main-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30%;
+    font-size: 2.5rem;
+}
+
+/* Texto del carrusel */
+#text-carousel {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30%;
+    font-size: 1.25rem;
+}
+
+/* Ajustes de margen para el contenedor principal */
+.main-content {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (max-width: 992px) {
+    /* Ajuste del contenedor principal */
+    .content-container {
+        flex-direction: column;
+    }
+
+    /* Contenedor de texto principal */
+    .text-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+
+    /* Texto */
+    #main-title {
+        font-size: 2rem; 
+        margin: 0 0 0;
+    }
+
+    /* Texto del carrusel */
+      #carousel-text {
+        font-size: 1rem;
+        margin: 0 0 0;
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    /* Ajuste del contenedor principal */
+    .content-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+
+    /* Contenedor de texto principal */
+    .text-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Título principal */
+    #main-title {
+        font-size: 1.75rem; 
+        margin: 0 0 0;
+    }
+
+    /* Texto del carrusel */
+    #carousel-text {
+        font-size: 1rem;
+        margin: 0 0 0;
+    }
+
+    /* Ajustar padding de las columnas de texto */
+    .text-column {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    /* Ajuste del navbar */
+    .navbar-dark {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Ajuste de la lista de opciones */
+    .list-group-item {
+        font-size: 1rem;
+        padding: 0.75rem 1rem;
+    }
+}
+
+/* Ocultar las opciones en pantallas medianas y pequeñas */
+@media (max-width: 992px) {
+    .options-container {
+        display: none; 
+    }
+
+    .options-container.show {
+        display: block; 
+    }
+
+    .toggle-btn {
+        display: inline-block;
+        background-color: #6c757d;
+        color: white;
+        padding: 10px 15px;
+        font-size: 1.25rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .toggle-btn:focus {
+        outline: none;
+    }
+}
+
+/* Opciones en móviles */
+@media (max-width: 576px) {
+    .options-container {
+        display: none; 
+    }
+
+    .options-container.show {
+        display: block; 
+    }
+}
